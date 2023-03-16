@@ -1,12 +1,13 @@
 <h1>Online Timer with alarm clock</h1>
 
-1. There are Start, Reset and Pause buttons. 
-2. You can add time using the buttons. 
-3. it is possible to set the time in a separate window, which opens when you click the button.
-4. When the time ends, a melody plays.
-5. The melody for the alarm clock can be selected and listened to in advance.
-5. The time is duplicated in Title and updated automatically.
-
+<ol>
+  <li>There are Start, Reset and Pause buttons.</li>
+  <li>You can add time using the buttons.</li>
+  <li>It is possible to set the time in a separate window, which opens when you click the button.</li>
+  <li>When the time ends, a melody plays.</li>
+  <li>The melody for the alarm clock can be selected and listened to in advance</li>
+  <li>The time is duplicated in Title and updated automatically.</li>
+</ol>
 
 <h2>Онлайн таймер с будильником</h2>
 <ol>
