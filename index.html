@@ -1,0 +1,114 @@
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Timer Online</title>
+    <meta name="description" content=""/>
+</head>
+<h1 class="text-center" style="padding-bottom: 0;">Timer Online</h1>
+<div class="container text-center">
+    <div class="timer">
+      <div class="full-timer-items">
+        <div class="full-timer-item timer__hours"></div>
+        <div class="full-timer-item timer__minutes"></div>
+        <div class="full-timer-item timer__seconds"></div>
+      </div>
+    </div>
+    <span id="btn-control">
+      <button class="start timer-control" id="btn-start">Start</button>
+      <button class="reset timer-control" id="reset">Reset</button>
+    </span>
+    <span id="turnОffSound" style="display:none;">
+      <button class="timer-control" id="btnTurnОffSound">Mute sound</button>
+    </span>
+</div>
+    <br>
+    <div class="d-flex flex-wrap justify-content-center">
+      <div class="d-flex justify-content-center">
+        <a type="button" class="btn-timer-add" id="seconds10">
+          + 10 sec
+        </a>
+      </div>
+      <div class="d-flex justify-content-center">
+        <a type="button" class="btn-timer-add" id="minute1">
+          + 1 min
+        </a>
+      </div>
+      <div class="d-flex justify-content-center">
+        <a type="button" class="btn-timer-add" id="minutes10">
+          + 10 min
+        </a>
+      </div>
+      <div class="d-flex justify-content-center">
+        <a type="button" class="btn-timer-add" id="minutes20">
+          + 20 min
+        </a>
+      </div>
+      <div class="d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <a type="button" class="btn-timer-add" style="margin: 10px; width: 140px;">
+            Other time
+        </a>
+      </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Set time</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="timing">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <p class="elem-timing">Hours</p>
+                  <input class="elem-data" id="hour" type="number" min="0">
+                </div>
+                <div class="col">
+                  <p class="elem-timing">Minutes</p>
+                  <input class="elem-data" id="minute" type="number" min="0">
+                </div>
+                <div class="col">
+                  <p class="elem-timing">Seconds</p>
+                  <input class="elem-data" id="second" type="number" min="0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" id="set-time" data-bs-dismiss="modal">Set time</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="text-center mt-3">
+    <p class="text-center">Select alarm sound</p>
+    <select size="1" id="soundSelect" class="sound-selection text-center">
+      <option value="classic">Classic</option>
+      <option value="classic2">Classic №2</option>
+      <option value="bunker">Bunker</option>
+      <option value="wall-clock">Wall Clock</option>
+      <option value="wake-up">Horn</option>
+      <option value="doorbell">Doorbell</option>
+      <option value="soundless">Soundless</option>
+    </select>
+    <button class="btn-alarm" id="testSoundAlarm"><img src="img/play.svg" class="btn-img" id="btnTestSound"></button>
+</div>
+
+
+
+<div id="seconds" style="display: none;">60000</div>
+
+
+<script src="js/timer.js"></script>
+<script src="js/bootstrap.min.js"></script>

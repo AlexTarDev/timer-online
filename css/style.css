@@ -1,0 +1,203 @@
+ 
+  h1 {
+    padding-bottom: 25px;
+    padding-top: 20px;
+    font-size: 35px;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    font-size: 20px;
+  }
+
+  .full-timer-items {
+    display: inline-flex;
+    font-size: 8rem;
+    padding-bottom: 20px;
+  }
+  
+  .full-timer-item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .full-timer-item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 2rem;
+  }
+  .full-timer-item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    /* right: -40px; */
+  }
+  
+  .timer-items {
+    display: inline-flex;
+    font-size: 10rem;
+    padding-bottom: 20px;
+  }
+  .timer-item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 25px;
+    margin-right: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .timer-item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 2rem;
+  }
+  .timer-item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    /* right: -40px; */
+  }
+  
+  .btn-timer{
+    width: 145px;
+    height: 48px;
+    padding: 7px;
+    background-color: #0dcaf0;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    transition: all .15s;
+  }
+  
+  .btn-timer:hover, .btn-timer-add:hover{
+    background-color: #21daff;
+    color: #000000;
+    text-decoration: none;
+    border: none;
+  }
+  @media screen and (max-width: 575px){
+    html {
+      font-size: 10px;
+    }
+    .timer-item {
+      margin-left: 6px;
+    }
+    .full-timer-item {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  
+  .sound-selection {
+    height: 40px;
+    width: 250px;
+    margin: auto;
+    margin: 0 10px 20px;
+    text-align: center;
+    border: 2px solid darkslategrey;
+    border-radius: 6px;
+  }
+  
+  .btn-img {
+    width: 15px;
+    position: relative;
+    top: -2px;
+    left: 2px;
+  }
+  
+  .btn-alarm {
+    height: 40px;
+    background-color: #0dcaf0;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    transition: all .15s;
+    margin: 10px 20px;
+    padding: 0 20px
+  }
+  
+  .font_size_days {
+    font-size: 10rem;
+  }
+  
+  @media screen and (max-width: 575px){
+    .font_size_days {
+      font-size: 14rem;
+    }
+  }
+  
+  .padding-items-days {
+    padding: 0;
+    margin-top: -50px
+  }
+  
+  @media (min-width: 900px) {
+    .padding-items-h-m-s {
+      margin-top: -30px
+    }
+  }
+
+  .elem-data {
+    height: 40px;
+    width: 100px;
+    margin: auto;
+    margin: 0 10px 20px;
+    text-align: center;
+    border: 2px solid darkslategrey;
+    border-radius: 6px;
+  }
+  
+.timing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 700px;
+    margin: auto;
+  }
+
+.elem-timing {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+.btn-timer-add {
+    width: 90px;
+    padding: 6px;
+    background-color: #0dcaf0;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    transition: all .15s;
+    margin: 10px;
+  }
+
+  .timer-control{
+    padding: 5px 20px;
+    background-color: #0dcaf0;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    transition: all .15s;
+  }
