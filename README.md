@@ -1,6 +1,5 @@
 <h1>Online Timer with alarm clock</h1>
 
-Online Timer with alarm clock
 1. There are Start, Reset and Pause buttons. 
 2. You can add time using the buttons. 
 3. it is possible to set the time in a separate window, which opens when you click the button.
