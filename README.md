@@ -19,3 +19,9 @@
   <li>Время дублируется в Title и обновляется автоматически.</li>
   <li>Есть возможность заменить hours, minutes и seconds на часы, минуты и секунды, которые будут склоняться в зависимости от времени на текущий момент. Данный кусок кода закомментирован в коде.</li>
 </ol>
+
+<div align="center">
+<img src="https://github.com/AlexTarDev/timer-online/blob/main/img/timer-online.png" alt="Online Timer">
+</div>
+
+<h3>Test the timer - <a href="https://sekundomer.online/timer/">Online Timer</a></h3>
